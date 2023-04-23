@@ -1,0 +1,102 @@
+:root {
+    --background-color: #F6F6F6;
+    --primary-color: #329BDA;
+    --white: #fff;
+    --grey: #E7E7E7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--background-color);
+    --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+p {
+    padding-top: 0.8rem;
+    padding-left: 4rem;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 99px;
+}
+
+.home {
+    margin-top: 0.78rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login {
+    margin-top: 0.78rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: #1d1e1e;
+    transition: 0.3s ease;
+}
+.login:hover {
+    color: #1d1e1e;
+    transition: 0.3s ease;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.p {
+    text-align: center;
+}
+
+.button-google {
+    margin-left: 35rem;
+    width: 10rem;
+    height: 2rem;
+}

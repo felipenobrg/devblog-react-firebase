@@ -11,9 +11,9 @@ export const Login = () => {
     }
 
     return ( 
-    <>
-    <div><p>Sign In With Google To Continue</p></div>
-    <button onClick={signInWithGoogle}>Sign in With Google</button>
-    </>
+    <div className="App">
+    <div className="p"><p>Sign In With Google To Continue</p></div>
+    <button className="button-google" onClick={signInWithGoogle}>Sign in With Google</button>
+    </div>
     )
 }
