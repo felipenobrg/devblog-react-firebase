@@ -84,19 +84,17 @@ img {
     transition: 0.3s ease;
 }
 
-.App {
+.section-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: black;
+    align-items: center;
 }
 
 .p {
-    text-align: center;
+    margin-right: 5rem;
 }
 
 .button-google {
-    margin-left: 35rem;
-    width: 10rem;
-    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 999px;
 }
