@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { Main } from "./pages/main"
+import { Home } from "./pages/home"
 import { Login } from "./pages/login"
 import { Navbar } from "./components/navbar"
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
      <Router>
        <Navbar/>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />}/>
       </Routes>
      </Router>
