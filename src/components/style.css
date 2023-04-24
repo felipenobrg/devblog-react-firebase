@@ -1,0 +1,55 @@
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+p {
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+img {
+    margin-top: 0.3rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 99px;
+}
+
+.home {
+    margin-top: 0.78rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+    margin: 0.9rem;
+}
+
+.login {
+    margin-top: 0.78rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+    margin: 0.9rem;
+}
+
+.home:hover {
+    border-bottom-color: #a2a1a1;
+    /* transition: 0.3s ease; */
+    transform: rotate(360deg);
+}
+
+.login:hover {
+    border-bottom-color: #a2a1a1;
+    transition: 0.3s ease;
+}
+
+.logout-button {
+   background-color: transparent;
+   color: #fff;
+   border: none;
+   
+}
