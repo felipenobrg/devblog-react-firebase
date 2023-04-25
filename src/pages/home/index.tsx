@@ -2,5 +2,5 @@ import './style.css'
 
 export const Home = () => {
 
-    return <h1 className="main-page"> Home Page</h1>
+    return <div className="main-page"> Home Page</div>
 }

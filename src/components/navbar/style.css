@@ -5,7 +5,7 @@
     padding: 0.9rem;
     font-size: 1.2rem;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--white);
 }
 
 p {
@@ -22,34 +22,49 @@ img {
 
 .home {
     margin-top: 0.78rem;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--white);
+    margin: 0.9rem;
+}
+
+.createPost {
+    margin-top: 0.78rem;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 3px solid var(--white);
     margin: 0.9rem;
 }
 
 .login {
     margin-top: 0.78rem;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid;
     margin: 0.9rem;
 }
 
 .home:hover {
-    border-bottom-color: #a2a1a1;
-    /* transition: 0.3s ease; */
-    transform: rotate(360deg);
+    border-bottom-color:  var(--grey);
+    transition: 0.3s ease;
 }
 
 .login:hover {
-    border-bottom-color: #a2a1a1;
+    border-bottom-color:  var(--grey);
+    transition: 0.3s ease;
+}
+
+.createPost:hover {
+    border-bottom-color:  var(--grey);
     transition: 0.3s ease;
 }
 
 .logout-button {
    background-color: transparent;
-   color: #fff;
+   color: var(--white);
    border: none;
-   
+}
+
+.logout-button:hover {
+    color: var(--grey);
 }
