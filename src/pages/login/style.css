@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .h4 {
@@ -16,6 +16,10 @@
     width: 20rem;
     font-weight: 600;
     font-size: large;
+}
+
+.button-google:hover {
+    background: #c3c2c2;
 }
 
 .google-logo {

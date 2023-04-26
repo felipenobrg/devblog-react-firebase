@@ -12,9 +12,24 @@
     margin-top: 0.9rem;
     font-size: 1.7rem;
     color: var(--primary-color);
+    cursor: pointer;
+    background: #9B06CE;
+    background: linear-gradient(to right, #9B06CE 36%, #CF1512 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.teste {
+.logo-blog:hover {
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.links {
     display: flex;
     gap: 2rem;
     margin-left: 20rem;
@@ -25,11 +40,21 @@ p {
     padding-left: 4rem;
 }
 
-img {
+p:hover {
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.img-user {
     margin-top: 0.3rem;
     width: 2.7rem;
     height: 2.7rem;
     border-radius: 99px;
+}
+
+.img-user:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 .home {
@@ -77,4 +102,7 @@ img {
 
 .logout-button:hover {
     color: var(--primary-color);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s ease;
 }

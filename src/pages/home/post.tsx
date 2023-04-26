@@ -1,6 +1,10 @@
 import { Heart } from "phosphor-react";
 import { Post as IPost } from "./index";
 import "./post.css";
+import { addDoc, getDocs, collection, query, where } from "firebase/firestore";
+import { auth, db } from "../../config/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useEffect } from "react";
 
 interface Props {
   post: IPost;
@@ -8,6 +12,26 @@ interface Props {
 
 export const Post = (props: Props) => {
   const { post } = props;
+  const { user } = useAuthState(auth)
+
+  
+
+  const likesRef = collection(db, "likes");
+
+  const likesDoc = query(likesRef, where("postId", "==", post.id ))
+
+  const getLikes = async () => {
+   const data = getDocs(likesDoc)
+  }
+  const addLike = async () => {
+    await addDoc(likesRef, { userId: user?.uid, postId: post.id })
+     
+    };
+
+
+  useEffect(() => {
+    getLikes()
+  }, [])
   return (
     <div className="posts-container">
       <div className="posts">
@@ -21,7 +45,8 @@ export const Post = (props: Props) => {
       </section>
       <footer>
         <p> @{post.username} </p>
-        <button><Heart /></button>
+        <button onClick={addLike}><Heart /></button>
+        <p>Likes: {}</p>
       </footer>
       </div>
     </div>

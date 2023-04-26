@@ -15,9 +15,8 @@ export const Navbar = () => {
   return (
     <>
       <div className="navbar-container">
-        
-       <h4 className="logo-blog">Dev Blog <Code size={40} color="#9B06CE" weight="fill" /></h4>
-       <div className="teste">
+       <h4 className="logo-blog"> <a href="/"> Dev Blog <Code size={40} color="#9B06CE" weight="fill"/></a></h4>
+       <div className="links">
         <Link className="home" to="/">
           Home
         </Link>
@@ -32,7 +31,7 @@ export const Navbar = () => {
         {user && (
           <>
             <p>{user?.displayName}</p>
-            <img src={user?.photoURL || ""} />
+            <img className="img-user" src={user?.photoURL || ""} />
             <button className="logout-button" onClick={signUserOut}>
              <SignOut size={28} weight="fill"/> 
             </button>

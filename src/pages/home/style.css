@@ -24,3 +24,9 @@
     color: var(--white);
     margin-left: 1rem;
 }
+
+.home-h1:hover {
+    color: var(--primary-color);
+    transition: 1s ease;
+}
+
