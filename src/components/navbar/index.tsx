@@ -15,7 +15,9 @@ export const Navbar = () => {
   return (
     <>
       <div className="navbar-container">
+        
        <h4 className="logo-blog">Dev Blog <Code size={40} color="#9B06CE" weight="fill" /></h4>
+       <div className="teste">
         <Link className="home" to="/">
           Home
         </Link>
@@ -26,6 +28,7 @@ export const Navbar = () => {
           Create Post
        </Link> 
         )}
+        </div>
         {user && (
           <>
             <p>{user?.displayName}</p>

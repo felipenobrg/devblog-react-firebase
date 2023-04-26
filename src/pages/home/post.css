@@ -1,11 +1,5 @@
-h1 {
-    display: flex;
-    justify-content: center;
-    color: red;
-}
-
 .posts {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+    color: var(--white);
+    border: 1px solid red;
 }
