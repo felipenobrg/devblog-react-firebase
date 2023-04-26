@@ -9,7 +9,7 @@ export const Post = (props: Props) => {
   const { post } = props;
   return (
     <div className="posts-container">
-      <div className="teste">
+      <div className="posts">
       <header>
         <h1>{post.title}</h1>
       </header>

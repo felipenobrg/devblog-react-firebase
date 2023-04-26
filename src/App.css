@@ -1,8 +1,8 @@
 :root {
     --background-color: #F6F6F6;
-    --primary-color: #329BDA;
+    --primary-color: #9B06CE;
     --white: #fff;
-    --grey: #6F848C;
+    --grey: #232123;
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    background: var(--background-color);
+    background: var(--grey);
     --webkit-font-smoothing: antialiased;
 }
 

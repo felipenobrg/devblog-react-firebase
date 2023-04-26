@@ -3,7 +3,7 @@ import { auth } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import "./style.css";
-import { SignOut } from "phosphor-react";
+import { Code, SignOut } from "phosphor-react";
 
 export const Navbar = () => {
   const [user] = useAuthState(auth);
@@ -15,12 +15,13 @@ export const Navbar = () => {
   return (
     <>
       <div className="navbar-container">
+       <h4 className="logo-blog">Dev Blog <Code size={40} color="#9B06CE" weight="fill" /></h4>
         <Link className="home" to="/">
           Home
         </Link>
         {!user ? (<Link className="login" to="/login">
           Login
-        </Link>) : (
+        </Link> ) : (
        <Link className="createPost" to="/createpost">
           Create Post
        </Link> 

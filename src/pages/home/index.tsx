@@ -32,6 +32,10 @@ export const Home = () => {
       {postsList?.map((post) => (
         <Post post={post} />
       ))}
+      <main className="home-main">
+      <h1 className="home-h1"> A blog by developers for developers.</h1>
+      <img className="img" src="../../../public/77d0a7c454e658833800528e748edbe9.png" alt="" />
+      </main>
     </div>
   );
 };

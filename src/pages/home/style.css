@@ -1,5 +1,17 @@
-.main-page {
+.home-main {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.img {
+    margin-top: 3rem;
+    margin-right: 1rem;
+    height: 40%;
+    width: 40%;
+}
+
+.home-h1 {
+    color: var(--white);
+    margin-left: 1rem;
 }

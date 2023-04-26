@@ -1,11 +1,16 @@
 .navbar-container {
     display: flex;
-    justify-content: flex-end;
     gap: 2rem;
     padding: 0.9rem;
-    font-size: 1.2rem;
-    background-color: var(--primary-color);
     color: var(--white);
+}
+
+.logo-blog {
+    font-family: 'Bruno Ace SC', cursive;
+    margin-top: 1rem;
+    margin-right: 22rem;
+    font-size: 1.7rem;
+    color: var(--primary-color);
 }
 
 p {
@@ -25,7 +30,7 @@ img {
     color: var(--white);
     text-decoration: none;
     border-bottom: 3px solid var(--white);
-    margin: 0.9rem;
+    margin: 0.9rem; 
 }
 
 .createPost {
@@ -42,29 +47,30 @@ img {
     text-decoration: none;
     border-bottom: 3px solid;
     margin: 0.9rem;
-}
+} 
 
 .home:hover {
-    border-bottom-color:  var(--grey);
+    border-bottom-color:  var(--primary-color);
     transition: 0.3s ease;
 }
 
 .login:hover {
-    border-bottom-color:  var(--grey);
+    border-bottom-color:  var(--primary-color);
     transition: 0.3s ease;
 }
 
 .createPost:hover {
-    border-bottom-color:  var(--grey);
+    border-bottom-color:  var(--primary-color);
     transition: 0.3s ease;
 }
 
 .logout-button {
    background-color: transparent;
+   margin-bottom: 0.2rem;
    color: var(--white);
    border: none;
 }
 
 .logout-button:hover {
-    color: var(--grey);
+    color: var(--primary-color);
 }
