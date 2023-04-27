@@ -3,6 +3,7 @@
     --primary-color: #9B06CE;
     --white: #fff;
     --grey: #232123;
+    --grey-light: #b9b9b9;
 }
 
 * {
@@ -36,9 +37,3 @@ h6 {
 button {
     cursor: pointer;
 }
-
-[disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-

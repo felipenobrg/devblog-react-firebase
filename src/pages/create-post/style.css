@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
-    
 }
 
 .section-create {
@@ -25,25 +24,26 @@
 
 .title-create {
     width: 16rem;
-    background: #CDDCFA;
+    background: var(--grey-light);
     padding: 0.4rem;
     border-radius: 0.5rem;
-
 }
 
 .description-create {
     width: 16rem;
-    background: #CDDCFA;
     padding: 0.4rem;
     border-radius: 0.5rem;
+    background: var(--grey-light);
 }
 
 .button-submit {
     padding: 0.3rem;
-    background: #CDDCFA;
     border-radius: 0.5rem;
     width: 9rem;
+    background: var(--grey-light);
 }
+
+media
 
 .button-submit:hover {
     transform: scale(1.1);

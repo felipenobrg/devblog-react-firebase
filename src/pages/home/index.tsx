@@ -25,7 +25,7 @@ export const Home = () => {
 
   useEffect(() => {
     getPosts();
-  }, []);
+  });
 
   return (
     <div className="main-page">
@@ -34,7 +34,7 @@ export const Home = () => {
       ))}
       <main className="home-main">
       <h1 className="home-h1"> A blog by developers for developers.</h1>
-      <img loading="lazy" className="img" src="../../../public/77d0a7c454e658833800528e748edbe9.png" alt="" />
+      <img className="img" src="../../../public/77d0a7c454e658833800528e748edbe9.png" alt="" />
       </main>
     </div>
   );

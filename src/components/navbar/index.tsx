@@ -30,7 +30,7 @@ export const Navbar = () => {
         </div>
         {user && (
           <>
-            <p>{user?.displayName}</p>
+            <p className="user-p">{user?.displayName}</p>
             <img className="img-user" src={user?.photoURL || ""} />
             <button className="logout-button" onClick={signUserOut}>
              <SignOut size={28} weight="fill"/> 
