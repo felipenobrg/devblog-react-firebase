@@ -41,11 +41,6 @@ a {
     padding-left: 4rem;
 }
 
-.user-p:hover {
-    color: var(--primary-color);
-    transition: 0.3s ease;
-}
-
 .img-user {
     margin-top: 0.3rem;
     width: 2.7rem;

@@ -74,20 +74,21 @@ console.log(err)
     <div className="posts-container">
       <div className="posts">
         <header>
-          <h1 className="title-h1">{post.title}</h1>
+          <h1 className="h1-posts">{post.title}</h1>
         </header>
         <section className="section-posts">
-          <div>
+          <div className="description-posts">
             <p>{post.description}</p>
           </div>
         </section>
 
-        <footer>
+        <footer className="footer-posts">
           <p> @{post.username} </p>
-          <button onClick={hasUserLiked ? removeLike : addLike}>
-            { hasUserLiked ?  <ThumbsUp /> : <ThumbsDown />}
+          <button className="button" onClick={hasUserLiked ? removeLike : addLike}>
+            { hasUserLiked ?  <ThumbsUp color="#fff"/> : <ThumbsDown />}
+            {likes && <p>{likes.length}</p>}
           </button>
-          {likes && <p>Likes: {likes.length}</p>}
+          
         </footer>
       </div>
     </div>

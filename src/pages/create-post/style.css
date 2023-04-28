@@ -25,13 +25,13 @@
 .title-create {
     width: 16rem;
     background: var(--grey-light);
-    padding: 0.4rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 0.5rem;
 }
 
 .description-create {
     width: 16rem;
-    padding: 0.4rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 0.5rem;
     background: var(--grey-light);
 }
@@ -43,7 +43,6 @@
     background: var(--grey-light);
 }
 
-media
 
 .button-submit:hover {
     transform: scale(1.1);
@@ -51,8 +50,8 @@ media
   }
 
 .create-h1 {
-    padding: 1.5rem;
-    color: #fff;
+    padding: 2rem;
+    color: var(--grey-light);
 }
 
 input,
