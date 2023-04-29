@@ -86,7 +86,7 @@ console.log(err)
         <footer className="footer-posts">
           <button className="button" onClick={hasUserLiked ? removeLike : addLike}>
             <p className="counter-likes"> {likes && <span>{likes.length}</span>} likes</p>
-           <p className="button-like"> { hasUserLiked ?  <ThumbsUp size={28} /> : <ThumbsDown size={24} />}</p>
+           <p className="button-like"> { hasUserLiked ?  <ThumbsDown size={28} /> : <ThumbsUp size={24} />}</p>
           </button>
         </footer>
       </div>
