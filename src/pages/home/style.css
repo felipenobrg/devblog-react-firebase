@@ -23,6 +23,7 @@
 .home-h1 {
     color: var(--white);
     margin-left: 1rem;
+    font-size: 3em;
 }
 
 .home-h1:hover {

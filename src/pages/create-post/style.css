@@ -7,9 +7,13 @@
 }
 
 .section-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: var(--primary-color);
     border-radius: 1rem;
-    height: 20.2rem;
+    min-height: 28rem;
+    width: 40%;
     border-radius: 50px;
     background: #232123;
     box-shadow:  5px 5px 10px #1c1a1c,
@@ -23,10 +27,12 @@
 }
 
 .title-create {
-    width: 16rem;
     background: var(--grey-light);
     padding: 0.4rem 0.9rem;
     border-radius: 0.5rem;
+    min-width: 25rem;
+    min-height: 2.5rem;
+    font-size: 1.2em;
 }
 
 .description-create {
@@ -34,13 +40,20 @@
     padding: 0.4rem 0.9rem;
     border-radius: 0.5rem;
     background: var(--grey-light);
+    min-width: 25rem;
+    min-height: 2.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.2em;
 }
 
 .button-submit {
     padding: 0.3rem;
     border-radius: 0.5rem;
-    width: 9rem;
     background: var(--grey-light);
+    min-width: 15rem;
+    min-height: 2.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.2em;
 }
 
 
@@ -50,8 +63,9 @@
   }
 
 .create-h1 {
-    padding: 2rem;
-    color: var(--grey-light);
+    padding: 3rem;
+    font-size: 3.4em;
+    color: rgb(255, 255, 255);
 }
 
 input,
@@ -64,5 +78,5 @@ textarea {
     text-align: center;
     color: rgb(255, 6, 6);
     font-weight: 500;
+    margin-top: 0.5rem;
 }
-

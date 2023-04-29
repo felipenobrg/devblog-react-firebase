@@ -3,6 +3,7 @@
     border: 1px solid rgb(49, 49, 49); 
     margin-top: 2rem;
     min-width:  100vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 .h1-posts, .description-posts, .footer-posts {
@@ -12,9 +13,49 @@
     flex-direction: column;
 }
 
+.h1-posts {
+    margin-top: 1rem;
+    font-size: 3.2em;
+    letter-spacing: 0.15rem;
+}
+
+.description-posts {
+    margin-top: 1.7em;
+    font-size: 1.5em;
+}
+
 .button {
-    background-color: transparent;
+   background-color: transparent;
    margin-bottom: 0.2rem;
    color: var(--white);
    border: none;
+}
+
+.button-like:hover {
+    color:  var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.counter-likes {
+    font-size: 1.3em;
+    margin-top: 2rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+.user-name {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.img-user-feed {
+    border-radius: 99px;
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
 }

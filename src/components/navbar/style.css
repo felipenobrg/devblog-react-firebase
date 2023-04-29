@@ -3,21 +3,21 @@
     padding: 1rem;
     color: var(--white);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 .logo-blog {
     font-family: 'Bruno Ace SC', cursive;
     margin-top: 0.9rem;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     color: var(--primary-color);
     cursor: pointer;
     background: #5a189a;
     background: linear-gradient(to right, #5a189a 17%, #7B2CBF 76%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    -webkit-text-fill-color: transparent;   
 }
 
 .logo-blog:hover {
@@ -34,17 +34,21 @@ a {
     display: flex;
     gap: 2rem;
     margin-left: 20rem;
+    font-size: 1.2em;
+    margin-top: 0.3rem;
 }
 
 .user-p {
     padding-top: 1rem;
     padding-left: 4rem;
+    font-size: 1.2em;
+    margin-top: 0.3rem;
 }
 
 .img-user {
-    margin-top: 0.3rem;
-    width: 2.7rem;
-    height: 2.7rem;
+    margin-top: 1.1rem;
+    width: 2.9rem;
+    height: 2.9rem;
     border-radius: 99px;
 }
 
@@ -91,7 +95,7 @@ a {
 
 .logout-button {
    background-color: transparent;
-   margin-bottom: 0.2rem;
+   margin-top: 0.3rem;
    color: var(--white);
    border: none;
 }

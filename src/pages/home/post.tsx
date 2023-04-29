@@ -73,6 +73,7 @@ console.log(err)
   return (
     <div className="posts-container">
       <div className="posts">
+      <p className="user-name"> <img className="img-user-feed" src={user?.photoURL || ""} /> @{post.username} </p>
         <header>
           <h1 className="h1-posts">{post.title}</h1>
         </header>
@@ -83,12 +84,10 @@ console.log(err)
         </section>
 
         <footer className="footer-posts">
-          <p> @{post.username} </p>
           <button className="button" onClick={hasUserLiked ? removeLike : addLike}>
-            { hasUserLiked ?  <ThumbsUp color="#fff"/> : <ThumbsDown />}
-            {likes && <p>{likes.length}</p>}
+            <p className="counter-likes"> {likes && <span>{likes.length}</span>} likes</p>
+           <p className="button-like"> { hasUserLiked ?  <ThumbsUp size={28} /> : <ThumbsDown size={24} />}</p>
           </button>
-          
         </footer>
       </div>
     </div>
