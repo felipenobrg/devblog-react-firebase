@@ -1,8 +1,8 @@
 import { ThumbsDown, ThumbsUp } from "phosphor-react";
-import { Post as IPost } from "./index";
+import { Post as IPost } from "../index";
 import "./post.css";
 import { addDoc, getDocs, deleteDoc, collection, query, where, doc } from "firebase/firestore";
-import { auth, db } from "../../config/firebase";
+import { auth, db } from "../../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect, useState } from "react";
 
@@ -73,7 +73,7 @@ console.log(err)
   return (
     <div className="posts-container">
       <div className="posts">
-      <p className="user-name"> <img className="img-user-feed" src={user?.photoURL || ""} /> @{post.username} </p>
+      <p className="user-name"> @{post.username} </p>
         <header>
           <h1 className="h1-posts">{post.title}</h1>
         </header>
@@ -84,9 +84,8 @@ console.log(err)
         </section>
 
         <footer className="footer-posts">
-          <button className="button" onClick={hasUserLiked ? removeLike : addLike}>
-            <p className="counter-likes"> {likes && <span>{likes.length}</span>} likes</p>
-           <p className="button-like"> { hasUserLiked ?  <ThumbsDown size={28} /> : <ThumbsUp size={24} />}</p>
+          <button className="button-like-deslike" onClick={hasUserLiked ? removeLike : addLike}>
+           <p className="button-like"> { hasUserLiked ?  <ThumbsDown size={29} /> : <ThumbsUp size={29} />} {likes && <span>{likes.length}</span>}</p>
           </button>
         </footer>
       </div>

@@ -13,7 +13,7 @@ export const Login = () => {
 
     return ( 
     <div className="section-container">
-    <div className="h4"><h4>Sign In With Google To Continue</h4></div>
+    <div><h4 className="sign-google">Sign In With Google To Continue</h4></div>
     <button className="button-google" onClick={signInWithGoogle}> <img className="google-logo" src="https://img.freepik.com/icones-gratis/procurar_318-265146.jpg" alt="Google Logo" /> Continue with Google </button>
     </div>
     )

@@ -16,8 +16,8 @@
 .img {
     margin-top: 3rem;
     margin-right: 1rem;
-    height: 40%;
-    width: 40%;
+    min-height: 40%;
+    min-width: 40%;
 }
 
 .home-h1 {

@@ -31,7 +31,7 @@
     padding: 0.4rem 0.9rem;
     border-radius: 0.5rem;
     min-width: 25rem;
-    min-height: 2.5rem;
+    min-height: 2.9rem;
     font-size: 1.2em;
 }
 
@@ -41,7 +41,7 @@
     border-radius: 0.5rem;
     background: var(--grey-light);
     min-width: 25rem;
-    min-height: 2.5rem;
+    min-height: 2.9rem;
     margin-top: 0.5rem;
     font-size: 1.2em;
 }
@@ -51,7 +51,7 @@
     border-radius: 0.5rem;
     background: var(--grey-light);
     min-width: 15rem;
-    min-height: 2.5rem;
+    min-height: 2.9rem;
     margin-top: 0.5rem;
     font-size: 1.2em;
 }
