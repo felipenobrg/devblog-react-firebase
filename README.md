@@ -25,4 +25,4 @@ This project was developed using the following technologies:
 
 ---
 
-[My profile in Linkedln](https://www.linkedin.com/in/felipenobrg)
+[Post about Dev Blog on Linkedln](https://www.linkedin.com/feed/update/urn:li:activity:7059204896574611456/)
